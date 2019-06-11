@@ -6,6 +6,6 @@ title: Donal's Photos
 	<ul class="photos-posts">
 
 	  {% for post in site.photos-posts %}
-	    <li><span>{{ photos-post.date | date_to_string }}</span> » <a href="{{ photos-post.url }}" title="{{ photos-post.title }}">{{ photos-post.title }}</a></li>
+	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 	  {% endfor %}
 	</ul>
